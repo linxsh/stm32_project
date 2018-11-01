@@ -1,0 +1,17 @@
+# Author: linxsh
+# Kconfig: Operating system Kconfig
+#---------------------------------------------------------------------------------#
+#
+#
+
+menuconfig RTOS
+	bool "RTOS"
+	help
+		Say Y or N to enable RTOS.This is real time operation system.
+source os/rtos/Kconfig
+
+menuconfig UCOS
+	bool "UCOS"
+	help
+		Say Y or N to enable UCOS.This is u control operation system.
+source os/ucos/Kconfig

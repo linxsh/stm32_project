@@ -1,0 +1,7 @@
+config TCP
+	bool "Transmission Control Protocol"
+	depends on RTOS
+
+config UDP
+	bool "User Datagram Protocol"
+	depends on RTOS

@@ -1,0 +1,11 @@
+# Author: linxsh
+# Kconfig: Top Level Kconfig
+#---------------------------------------------------------------------------------#
+#
+mainmenu "Configuration"
+
+menu "Operating system support"
+
+source os/Kconfig
+
+endmenu
