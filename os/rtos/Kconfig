@@ -1,7 +1,12 @@
+menuconfig NET
+	tristate "Network Support"
+	depends on RTOS
+
 config TCP
 	bool "Transmission Control Protocol"
-	depends on RTOS
+	depends on NET
 
 config UDP
 	bool "User Datagram Protocol"
-	depends on RTOS
+	depends on NET
+

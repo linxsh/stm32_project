@@ -33,6 +33,7 @@ build: .config compile link
 	@make menuconfig
 
 compile:
+	@mkdir -p install
 	@make -C os
 	#@make -c app
 	#@make -c driver
@@ -44,6 +45,7 @@ clean:
 	@make -C os     clean
 	#@make -C app    clean
 	#@make -C driver clean
+	@rm install -rf
 
 distclean:
 	@find ./ -name *.o     | xargs rm -f

@@ -4,8 +4,24 @@
 #
 mainmenu "Configuration"
 
-menu "Operating system support"
+#---------------------------------------------------------------------------------#
+#
+menu "Develop Board Config"
+
+config BOARD
+	prompt "Board (STM32F100 STM32F107)"
+	string
+	default "STM32F100" 
+
+endmenu
+
+#---------------------------------------------------------------------------------#
+#
+menu "Operating System Support"
 
 source os/Kconfig
 
 endmenu
+
+#---------------------------------------------------------------------------------#
+#
